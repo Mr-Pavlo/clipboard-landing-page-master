@@ -1,0 +1,38 @@
+@use "variables";
+
+@mixin download-btn($bg-color, $ft-size, $border-color) {
+    border-top: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+    border-bottom: 3px solid $border-color;
+    border-left: 1px solid $border-color;
+    color: variables.$neutral-color-white;
+    background-color: $bg-color;
+    text-decoration: none;
+    font-weight: variables.$body-font-weight-600;
+    font-size: $ft-size;
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: opacity 0.15s ease-out;
+
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+@mixin headlines($ft-size) {
+    font-size: $ft-size;
+    color: variables.$neutral-color-gray-700;
+    font-weight: variables.$body-font-weight-600;
+}
+
+@mixin paragraph($ft-size) {
+    font-size: $ft-size;
+    line-height: 1.6;
+    color: variables.$neutral-color-gray-500;
+}
+
+@mixin description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
