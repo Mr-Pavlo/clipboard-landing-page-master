@@ -50,11 +50,11 @@ body {
   gap: 20px;
 }
 
-.hero__btn {
+.cta-btn {
   box-shadow: 0 5px 10px hsl(200, 10%, 80%);
 }
 
-.hero__btn_ios {
+.cta-btn-ios {
   border-top: 1px solid hsl(175, 70%, 35%);
   border-right: 1px solid hsl(175, 70%, 35%);
   border-bottom: 3px solid hsl(175, 70%, 35%);
@@ -68,11 +68,11 @@ body {
   padding: 10px 20px;
   transition: opacity 0.15s ease-out;
 }
-.hero__btn_ios:hover {
+.cta-btn-ios:hover {
   opacity: 0.6;
 }
 
-.hero__btn_mac {
+.cta-btn-mac {
   border-top: 1px solid hsl(233, 50%, 55%);
   border-right: 1px solid hsl(233, 50%, 55%);
   border-bottom: 3px solid hsl(233, 50%, 55%);
@@ -86,7 +86,7 @@ body {
   padding: 10px 20px;
   transition: opacity 0.15s ease-out;
 }
-.hero__btn_mac:hover {
+.cta-btn-mac:hover {
   opacity: 0.6;
 }
 
@@ -410,18 +410,18 @@ body {
     max-width: 600px;
     font-size: 16px;
   }
-  .hero__btn_ios {
+  .cta-btn-ios {
     font-size: 16px;
     padding: 5px 15px;
   }
-  .hero__btn_ios:active {
+  .cta-btn-ios:active {
     opacity: 0.6;
   }
-  .hero__btn_mac {
+  .cta-btn-mac {
     font-size: 16px;
     padding: 5px 15px;
   }
-  .hero__btn_mac:active {
+  .cta-btn-mac:active {
     opacity: 0.6;
   }
   .snippets {
@@ -519,11 +519,11 @@ body {
   .hero__actions {
     flex-direction: column;
   }
-  .hero__btn_ios {
+  .cta-btn-ios {
     font-size: 16px;
     padding: 15px 75px;
   }
-  .hero__btn_mac {
+  .cta-btn-mac {
     font-size: 16px;
     padding: 15px 75px;
   }
@@ -597,7 +597,6 @@ body {
     flex-wrap: nowrap;
     text-align: center;
     gap: 15px;
-    flex-wrap: nowrap;
     height: 100%;
   }
   .footer__item {
@@ -606,6 +605,5 @@ body {
   .footer__social {
     margin: 0;
     gap: 40px;
-    height: 0;
   }
 }/*# sourceMappingURL=style.css.map */
