@@ -504,7 +504,7 @@ body {
     filter: invert(62%) sepia(60%) saturate(400%) hue-rotate(120deg);
   }
 }
-@media screen and (max-width: 391px) {
+@media screen and (max-width: 426px) {
   .hero {
     padding: 50px 15px;
   }
