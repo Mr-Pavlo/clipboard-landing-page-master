@@ -219,7 +219,6 @@ body {
 
 .workflow__list {
   display: flex;
-  flex-direction: row;
   list-style: none;
   gap: 10px;
 }
@@ -259,6 +258,7 @@ body {
   justify-content: space-around;
   list-style: none;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .partners__item-logo {
@@ -282,7 +282,7 @@ body {
 }
 
 .clipboard__title {
-  font-size: 40px;
+  font-size: 30px;
   color: hsl(210, 10%, 33%);
   font-weight: 600;
 }
@@ -347,4 +347,265 @@ body {
 }
 .footer__icon:hover {
   filter: invert(62%) sepia(60%) saturate(400%) hue-rotate(120deg);
+}
+
+@media screen and (max-width: 1024px) {
+  .snippets {
+    padding: 50px;
+  }
+  .snippets__body {
+    justify-content: flex-start;
+  }
+  .snippets__image {
+    left: -100px;
+    margin-right: -40px;
+    width: 600px;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  .access {
+    padding: 50px 50px 0 50px;
+    gap: 40px;
+    width: 100%;
+  }
+  .access__text {
+    max-width: 700px;
+  }
+  .access__img {
+    width: 100%;
+  }
+  .workflow {
+    padding: 50px;
+  }
+  .workflow__list {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .workflow__item {
+    max-width: 280px;
+  }
+  .partners {
+    padding: 50px;
+  }
+  .partners__list {
+    justify-content: space-between;
+  }
+  .partners__item-logo {
+    width: 135px;
+  }
+  .footer {
+    padding: 50px;
+  }
+  .footer__nav {
+    gap: 10px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 50px 30px;
+    gap: 40px;
+  }
+  .hero__text {
+    max-width: 600px;
+    font-size: 16px;
+  }
+  .hero__btn_ios {
+    font-size: 16px;
+    padding: 5px 15px;
+  }
+  .hero__btn_ios:active {
+    opacity: 0.6;
+  }
+  .hero__btn_mac {
+    font-size: 16px;
+    padding: 5px 15px;
+  }
+  .hero__btn_mac:active {
+    opacity: 0.6;
+  }
+  .snippets {
+    padding: 50px 30px;
+  }
+  .snippets__text {
+    font-size: 16px;
+    max-width: 600px;
+  }
+  .snippets__image {
+    left: -120px;
+    margin-right: -65px;
+    width: 500px;
+  }
+  .snippets__features {
+    top: 0;
+  }
+  .snippets__feature_text {
+    font-size: 14px;
+  }
+  .access__text {
+    font-size: 16px;
+    max-width: 600px;
+  }
+  .workflow {
+    padding: 50px 30px;
+    gap: 45px;
+  }
+  .workflow__text {
+    font-size: 16px;
+  }
+  .workflow__item {
+    max-width: 210px;
+  }
+  .workflow__item-img {
+    width: auto;
+    height: 40px;
+  }
+  .workflow__item-title {
+    font-size: 20px;
+  }
+  .workflow__item-text {
+    font-size: 16px;
+  }
+  .partners {
+    padding: 50px 30px;
+  }
+  .partners__item-logo {
+    min-width: 60px;
+    max-width: 115px;
+  }
+  .clipboard {
+    gap: 40px;
+  }
+  .clipboard__text {
+    font-size: 16px;
+    max-width: 550px;
+  }
+  .clipboard__actions {
+    gap: 20px;
+  }
+  .footer {
+    padding: 40px 30px;
+    gap: 50px;
+  }
+  .footer__item {
+    margin-right: 40px;
+  }
+  .footer__nav {
+    gap: 5px;
+    height: 55px;
+  }
+  .footer__item {
+    font-size: 16px;
+  }
+  .footer__item:active {
+    color: hsl(171, 66%, 44%);
+  }
+  .footer__icon:active {
+    filter: invert(62%) sepia(60%) saturate(400%) hue-rotate(120deg);
+  }
+}
+@media screen and (max-width: 391px) {
+  .hero {
+    padding: 50px 15px;
+  }
+  .hero__title {
+    font-size: 30px;
+    max-width: 300px;
+    align-self: center;
+  }
+  .hero__text {
+    max-width: 300px;
+  }
+  .hero__actions {
+    flex-direction: column;
+  }
+  .hero__btn_ios {
+    font-size: 16px;
+    padding: 15px 75px;
+  }
+  .hero__btn_mac {
+    font-size: 16px;
+    padding: 15px 75px;
+  }
+  .snippets {
+    padding: 50px 15px;
+  }
+  .snippets__text {
+    max-width: 300px;
+    align-self: center;
+  }
+  .snippets__body {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .snippets__image {
+    position: static;
+    width: 100%;
+    margin: 0;
+  }
+  .snippets__feature {
+    text-align: center;
+    max-width: 260px;
+  }
+  .access {
+    padding: 50px 15px;
+  }
+  .access__text {
+    max-width: 300px;
+    align-self: center;
+  }
+  .workflow {
+    padding: 50px 15px;
+    text-align: center;
+    gap: 100px;
+  }
+  .workflow__description {
+    max-width: 300px;
+  }
+  .workflow__list {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .workflow__item {
+    align-self: center;
+    max-width: 320px;
+  }
+  .partners {
+    padding: 50px 15px;
+  }
+  .partners__list {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .partners__item-logo {
+    max-width: 300px;
+  }
+  .clipboard {
+    padding: 50px 15px;
+  }
+  .clipboard__text {
+    max-width: 300px;
+  }
+  .clipboard__actions {
+    flex-direction: column;
+  }
+  .footer {
+    flex-direction: column;
+    padding: 50px 15px;
+  }
+  .footer__nav {
+    flex-wrap: nowrap;
+    text-align: center;
+    gap: 15px;
+    flex-wrap: nowrap;
+    height: 100%;
+  }
+  .footer__item {
+    margin: 0;
+  }
+  .footer__social {
+    margin: 0;
+    gap: 40px;
+    height: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
